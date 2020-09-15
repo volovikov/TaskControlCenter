@@ -1,5 +1,5 @@
 define({
-    appTitle: 'Miatel Control Center',
+    appTitle: 'Task Control Center',
     btn: {
         loginName: 'Войти',
         cancelName: 'Отменить',
