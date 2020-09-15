@@ -2,7 +2,7 @@ define([
     'jquery',
     'kendo',
     'util',
-    'i18n!js/common/nls/ru-ru/main.js',
+    'i18n!static/js/common/nls/ru-ru/main.js',
     'i18n!./nls/ru-ru/tree.js',
     'css!./css/tree'
 ], function($, k, u, common, local) {

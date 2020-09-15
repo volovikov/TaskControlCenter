@@ -2,10 +2,10 @@ define([
     'jquery',
     'kendo',
     'util',
-    'i18n!js/common/nls/ru-ru/main.js',
+    'i18n!static/js/common/nls/ru-ru/main.js',
     'i18n!./nls/ru-ru/miatelTree.js',
     'text!./templates/miatel-tree.html',
-    'js/common/tree/TreeModule',
+    'static/js/common/tree/TreeModule',
     'css!./css/miatelTree'
 ], function($, k, u, common, local, miatelTree, treeModule) {
     
@@ -223,7 +223,7 @@ define([
         renderTasksTree: function() {
             var that = this; 
 
-            requirejs(['js/miatelTree/MiatelTreeTasksModule'], function(module) {
+            requirejs(['static/js/miatelTree/MiatelTreeTasksModule'], function(module) {
                 that.treeModules['tasks'] = module;
                 
                 module.run({
@@ -235,7 +235,7 @@ define([
         renderCompanyMembersTree: function() {
             var that = this;
 
-            requirejs(['js/miatelTree/MiatelTreeMembersModule'], function(module) {
+            requirejs(['static/js/miatelTree/MiatelTreeMembersModule'], function(module) {
                 that.treeModules['members'] = module;
                 
                 module.run({
@@ -247,7 +247,7 @@ define([
         renderCompanySiteTree: function() {
             var that = this;
 
-            requirejs(['js/miatelTree/MiatelTreeSiteModule'], function(module) {
+            requirejs(['static/js/miatelTree/MiatelTreeSiteModule'], function(module) {
                 that.treeModules['site'] = module;
                 
                 module.run({

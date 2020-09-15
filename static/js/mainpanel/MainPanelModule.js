@@ -51,31 +51,31 @@ mainPageChat, mainPageAcceptChat, mainPageMenuNotify) {
             this.modules = {
                 miatel: [{
                     elemId: 'main-page-miatel-tree',
-                    module: 'js/miatelTree/MiatelTreeModule'      
+                    module: 'static/js/miatelTree/MiatelTreeModule'
                 },{
                     elemId: 'main-page-miatel-content',
-                    module: 'js/miatelContent/MiatelContentModule'                          
+                    module: 'static/js/miatelContent/MiatelContentModule'
                 }],
                 vats:[{
                     elemId: 'main-page-vats-tree',
-                    module: 'js/vatsTree/VatsTreeModule'      
+                    module: 'static/js/vatsTree/VatsTreeModule'
                 },{
                     elemId: 'main-page-vats-content',
-                    module: 'js/vatsContent/VatsContentModule'                          
+                    module: 'static/js/vatsContent/VatsContentModule'
                 }],                   
                 transit: [{
                     elemId: 'main-page-transit-tree',
-                    module: 'js/transitTree/TransitTreeModule'                        
+                    module: 'static/js/transitTree/TransitTreeModule'
                 },{
                     elemId: 'main-page-transit-content',
-                    module: 'js/transitContent/TransitContentModule'                         
+                    module: 'static/js/transitContent/TransitContentModule'
                 }],
                 wholesale: [{
                     elemId: 'main-page-wholesale-tree',
-                    module: 'js/wholesaleTree/WholesaleTreeModule'
+                    module: 'static/js/wholesaleTree/WholesaleTreeModule'
                 },{
                     elemId: 'main-page-wholesale-content',
-                    module: 'js/wholesaleContent/WholesaleContentModule'
+                    module: 'static/js/wholesaleContent/WholesaleContentModule'
                 }]
             };
             this.i18n = $.extend(common, local);
@@ -536,7 +536,7 @@ mainPageChat, mainPageAcceptChat, mainPageMenuNotify) {
             var that = this,
                 storage = app.getStorage(),
                 pathes = this.modules[moduleName];
-        
+
             if (app.getActiveSection() == storage.get('loadedSection')) {
                 return;
             }        

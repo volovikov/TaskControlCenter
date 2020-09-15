@@ -58,6 +58,26 @@ def login():
                 'data': user
             })
 
+@app.route('/api/task/get-task-notify-list', methods=['POST'])
+def get_task_notify_list():
+    return {
+        'success': True,
+        'data': []
+    }
+
+@app.route('/api/client/get-client-notify-list', methods=['POST'])
+def get_client_notify_list():
+    return {
+        'success': True,
+        'data': []
+    }
+
+@app.route('/api/member/get-member-list-tree', methods=['POST'])
+def get_member_list_tree():
+    return {
+        'success': True,
+        'data': []
+    }
 
 if __name__ == '__main__':
     app.run(debug=True)

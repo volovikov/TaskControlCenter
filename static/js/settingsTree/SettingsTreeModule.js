@@ -16,7 +16,7 @@ define([
     'i18n!js/common/nls/ru-ru/main.js',
     'i18n!./nls/ru-ru/settingsTree.js',
     'text!./templates/settings-tree.html',
-    'js/common/tree/TreeModule',
+    'static/js/common/tree/TreeModule',
     'css!./css/settingsTree'    
 ], function($, k, u, common, local, settingsTree, treeModule) {
     

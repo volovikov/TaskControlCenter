@@ -2,7 +2,7 @@ define([
     'jquery',
     'kendo',
     'util',
-    'i18n!js/common/nls/ru-ru/main.js',
+    'i18n!static/js/common/nls/ru-ru/main.js',
     'i18n!./nls/ru-ru/miatelContent.js',    
     'css!./css/miatelContent'
 ], function($, k, u, common, local) {
@@ -27,7 +27,7 @@ define([
                splitTreeId = this.treeId.split('-');
         
             if (this.treeId == 0) {
-                requirejs(['js/miatelContent/MiatelContentDepartmentList'], function(module) {
+                requirejs(['static/js/miatelContent/MiatelContentDepartmentList'], function(module) {
                     module.run({
                         el: that.el,
                         treeId: that.treeId
@@ -36,7 +36,7 @@ define([
             } else {
                 switch (splitTreeId.length) {
                     case 1:
-                        requirejs(['js/miatelContent/MiatelContentDepartment'], function(module) {
+                        requirejs(['static/js/miatelContent/MiatelContentDepartment'], function(module) {
                             module.run({
                                 el: that.el,
                                 treeId: that.treeId
@@ -45,7 +45,7 @@ define([
                         break;
                         
                     case 2:
-                        requirejs(['js/miatelContent/MiatelContentMemberForm'], function(module) {
+                        requirejs(['static/js/miatelContent/MiatelContentMemberForm'], function(module) {
                             module.run({
                                 el: that.el,
                                 treeId: that.treeId

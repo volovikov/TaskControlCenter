@@ -4,7 +4,7 @@ define([
     'util',
     'i18n!js/common/nls/main.js',
     'i18n!./nls/transitTree.js',
-    'js/common/tree/TreeModule',
+    'static/js/common/tree/TreeModule',
     'css!./css/transitTree'
 ], function($, k, u, common, local, treeModule) {
     

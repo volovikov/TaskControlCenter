@@ -2,7 +2,7 @@ define([
     'jquery',
     'kendo',
     'util',
-    'i18n!js/common/nls/ru-ru/main.js',
+    'i18n!static/js/common/nls/ru-ru/main.js',
     'i18n!./nls/ru-ru/miatelContent.js',    
     'css!./css/miatelContent'
 ], function($, k, u, common, local) {
@@ -48,7 +48,7 @@ define([
             
             switch (this.treeKey) {
                 case 'members':
-                    requirejs(['js/miatelContent/MiatelContentMembersModule'], function(module) {
+                    requirejs(['static/js/miatelContent/MiatelContentMembersModule'], function(module) {
                         module.run({
                             el: that.el,
                             treeId: that.treeId
@@ -57,7 +57,7 @@ define([
                     break;
                     
                 case 'tasks':
-                    requirejs(['js/miatelContent/MiatelContentTaskModule'], function(module) {
+                    requirejs(['static/js/miatelContent/MiatelContentTaskModule'], function(module) {
                         module.run({
                             el: that.el,
                             taskId: that.treeId
@@ -66,7 +66,7 @@ define([
                     break;
                     
                 case 'site':
-                    requirejs(['js/miatelContent/MiatelContentSiteModule'], function(module) {
+                    requirejs(['static/js/miatelContent/MiatelContentSiteModule'], function(module) {
                         module.run({
                             el: that.el,
                             treeId: that.treeId

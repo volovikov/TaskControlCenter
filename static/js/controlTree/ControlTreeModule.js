@@ -17,7 +17,7 @@ define([
     'i18n!js/common/nls/ru-ru/main.js',
     'i18n!./nls/ru-ru/controlTree.js',
     'text!./templates/control-tree.html',
-    'js/common/tree/TreeModule',
+    'static/js/common/tree/TreeModule',
     'css!./css/controlTree'
 ], function($, k, u, common, local, controlTree, treeModule) {
     

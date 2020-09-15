@@ -14,7 +14,7 @@ define([
     'util',
     'i18n!static/js/common/nls/main.js',
     'i18n!./nls/adminTree.js',
-    'js/common/tree/TreeModule',
+    'static/js/common/tree/TreeModule',
     'css!./css/adminTree'
 ], function($, k, u, common, local, treeModule) {
     
